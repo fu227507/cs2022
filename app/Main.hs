@@ -42,5 +42,32 @@ func :: String -> String
 -- func input = case map words (lines input) of
 --     [[s]] -> unlines [[s !! 2]]
 
-func input = case map (map readInt . words) (lines input) of
-    [[x]] -> unlines [showInt (24 - x)]
+-- func input = case map (map readInt . words) (lines input) of
+--     [[x]] -> unlines [showInt (24 - x)]
+
+-- func input = case map (map readInt . words) (lines input) of
+--     [[a,b]] -> unlines [showInt (max a b)]
+
+-- func input = case map (map readInt . words) (lines input) of
+--     [[a, b]] -> unlines [showInt (maxIchi a b)]
+
+-- maxIchi :: Int -> Int -> Int
+-- maxIchi x y
+--     | x `mod` 10 > y `mod` 10 = y
+--     | otherwise               = x
+
+-- func input = case map (map readInt . words) (lines input) of
+--     [[a, b]] -> unlines [judge (a `mod` b == 0)]
+
+-- judge :: Bool -> String
+-- judge False = "No"
+-- judge True  = "Yes"
+
+-- func input = case map (map readInt . words) (lines input) of
+--     [[a, b, c, d]] -> unlines [showInt ((a `max` b) `max` (c `max` d))]
+
+-- func input = case lines input of
+--     [s, t, u] -> unlines [u ++ t ++ s]
+
+-- func input = case lines input of
+--     [s, n] -> unlines [ [s !! (readInt n - 1)] ]
